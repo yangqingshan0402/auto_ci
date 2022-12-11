@@ -15,7 +15,7 @@ jobs:
           flutter-version: '1.17.1'
           channel: 'stable'
       #想让我们CI做的事情！
-      - run: cd ../../NativeAndFlutter/flutter_module && flutter build ios-framework --cocoapods --output=../NativeDemo/Flutter 
+      - run: cd flutter_module && flutter build ios-framework --cocoapods --output=../NativeDemo/Flutter 
       - run: |
          git add .
          git commit -m 'update flutter framework'
